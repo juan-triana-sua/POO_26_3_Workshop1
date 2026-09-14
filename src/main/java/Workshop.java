@@ -368,7 +368,7 @@ public class Workshop {
         // TODO: Implementar el método para validar un correo electrónico.
         // Ejemplo: Si correo = "test@example.com", el resultado debería ser true.
    
-	    if(correo == null || correo.length() < 5){
+    if(correo == null || correo.contains(" ") || correo.contains("..")){
         return false;
     }
 
@@ -380,12 +380,20 @@ public class Workshop {
             if(arroba != -1) return false;
             arroba = a;
         }
-        if(correo.charAt(a)=='.' && arroba != -1){
+    }
+
+    if(arroba <= 0 || arroba >= correo.length()-1){
+        return false;
+    }
+
+    for(int a=arroba+1; a<correo.length(); a++){
+        if(correo.charAt(a)=='.'){
             punto = a;
+            break;
         }
     }
 
-    return arroba > 0 && punto > arroba+1 && punto < correo.length()-1;
+    return punto > arroba+1 && punto < correo.length()-1;
     }
 
     // Método que calcula el promedio de una lista de números
