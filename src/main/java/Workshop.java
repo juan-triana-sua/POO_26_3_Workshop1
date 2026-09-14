@@ -319,14 +319,14 @@ public class Workshop {
 
     String[] palabras = cadena.trim().split("\\s+");
 
-    return palabras.length;
+    return palabras.length;//otro ejercicio que no funciona n_n.
     }
 
     // Método que convierte una cadena a mayúsculas
     public String convertirAMayusculas(String cadena) {
         // TODO: Implementar el método para convertir una cadena a mayúsculas.
         // Ejemplo: Si cadena = "hello", el resultado debería ser "HELLO".
-        return "";
+        return cadena.toUpperCase();
     }
 
     // Método que convierte una cadena a minúsculas
