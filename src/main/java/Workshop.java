@@ -227,7 +227,7 @@ public class Workshop {
     for(int a=0; a<cantidad; a++){
         resultado[a] = temporal[a];
     }
-	return resultado
+	return resultado;
     }
 
     // Método que combina dos arreglos en uno solo
