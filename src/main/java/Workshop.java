@@ -297,7 +297,9 @@ public class Workshop {
         // TODO: Implementar el método para verificar si una cadena es un palíndromo.
         // Ejemplo: Si cadena = "madam", el resultado debería ser true.
     
-	    for(int a=0; a<cadena.length()/2; a++){
+    	cadena = cadena.replace(" ", "").toLowerCase();
+
+    for(int a=0; a<cadena.length()/2; a++){
         if(cadena.charAt(a) != cadena.charAt(cadena.length()-1-a)){
             return false;
         }
