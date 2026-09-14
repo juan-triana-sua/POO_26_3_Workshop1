@@ -252,14 +252,14 @@ public class Workshop {
         // TODO: Implementar el método para rotar un arreglo n posiciones.
         // Ejemplo: Si arreglo = [1, 2, 3, 4, 5] y posiciones = 2, el resultado debería ser [3, 4, 5, 1, 2].
      
-	     if(arreglo.length == 0){
+    	if(arreglo.length == 0){
         return arreglo;
     }
 
     int[] resultado = new int[arreglo.length];
 
     for(int a=0; a<arreglo.length; a++){
-        int nuevaPosicion = (a - posiciones) % arreglo.length;
+        int nuevaPosicion = (a + posiciones) % arreglo.length;
 
         if(nuevaPosicion < 0){
             nuevaPosicion = nuevaPosicion + arreglo.length;
