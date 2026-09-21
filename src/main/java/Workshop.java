@@ -534,7 +534,20 @@ Paper disproves Spock
 Spock vaporizes Rock
 Rock crushes Scissors
          */
-        return "";
+
+	    if(game[0].equals(game[1])){
+        return "Empate";
+    }
+
+    if((game[0].equals("R") && (game[1].equals("S") || game[1].equals("L"))) ||
+       (game[0].equals("P") && (game[1].equals("R") || game[1].equals("V"))) ||
+       (game[0].equals("S") && (game[1].equals("P") || game[1].equals("L"))) ||
+       (game[0].equals("L") && (game[1].equals("V") || game[1].equals("P"))) ||
+       (game[0].equals("V") && (game[1].equals("S") || game[1].equals("R")))){
+        return "Player 1";
+    }
+
+    return "Player 2";
     }
 
     public double areaCirculo(double radio) {
