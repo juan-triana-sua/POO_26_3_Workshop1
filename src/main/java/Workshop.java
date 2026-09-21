@@ -287,7 +287,7 @@ public class Workshop {
 
     for(int a=cadena.length()-1; a>=0; a--){
         invertida = invertida + cadena.charAt(a);
-    }
+    }//El test espera "!@#321", pero al invertir "123@#!" el resultado correcto es "!#@321".
 
     return invertida;
     }
