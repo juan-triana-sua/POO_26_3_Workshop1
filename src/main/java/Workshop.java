@@ -275,7 +275,7 @@ public class Workshop {
     public int contarCaracteres(String cadena) {
         // TODO: Implementar el método para contar el número de caracteres en una cadena.
         // Ejemplo: Si cadena = "Hello", el resultado debería ser 5.
-	    return cadena.length();//no se que este mal n_n.
+	    return cadena.length();//El test espera que el codigo devuelva el numero 13 para "Hola mundo", pero tiene 10 caracteres. También espera 14 para "Hola mundo", pero tiene 12. El error está en los valores del test.
     }
 
     // Método que invierte una cadena
@@ -601,7 +601,6 @@ Rock crushes Scissors
         return "Pisces";
     }
     }
-
 
 }
 
