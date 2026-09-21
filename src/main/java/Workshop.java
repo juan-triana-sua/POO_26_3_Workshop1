@@ -287,10 +287,9 @@ public class Workshop {
 
     for(int a=cadena.length()-1; a>=0; a--){
         invertida = invertida + cadena.charAt(a);
-    }//El test espera "!@#321", pero al invertir "123@#!" el resultado correcto es "!#@321".
-
-    return invertida;
     }
+    return invertida;
+    }//El test espera "!@#321", pero al invertir "123@#!" el resultado correcto es "!#@321".
 
     // Método que verifica si una cadena es un palíndromo
     public boolean esPalindromo(String cadena) {
@@ -319,8 +318,8 @@ public class Workshop {
 
     String[] palabras = cadena.trim().split("\\s+");
 
-    return palabras.length;//otro ejercicio que no funciona n_n.
-    }
+    return palabras.length;
+    }//otro ejercicio que no funciona n_n. El test espera 4, pero "Hola mundo hoy" tiene 3 palabras. El error está en el test.
 
     // Método que convierte una cadena a mayúsculas
     public String convertirAMayusculas(String cadena) {
