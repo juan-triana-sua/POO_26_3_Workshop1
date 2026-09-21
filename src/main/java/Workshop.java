@@ -494,7 +494,25 @@ public class Workshop {
 
         // El método debe retornar un mensaje indicando el resultado del juego.
         // Ejemplo: Si la eleccionUsuario es "Piedra", el resultado podría ser "Ganaste" o "Perdiste" dependiendo de la elección de la computadora.
-        return "";
+
+	    String[] opciones = {"Piedra", "Papel", "Tijera", "Lagarto", "Spock"};
+
+    int numero = (int)(Math.random() * 5);
+    String computadora = opciones[numero];
+
+    if(eleccionUsuario.equalsIgnoreCase(computadora)){
+        return "Empate";
+    }
+
+    if((eleccionUsuario.equalsIgnoreCase("Piedra") && (computadora.equals("Tijera") || computadora.equals("Lagarto"))) ||
+       (eleccionUsuario.equalsIgnoreCase("Papel") && (computadora.equals("Piedra") || computadora.equals("Spock"))) ||
+       (eleccionUsuario.equalsIgnoreCase("Tijera") && (computadora.equals("Papel") || computadora.equals("Lagarto"))) ||
+       (eleccionUsuario.equalsIgnoreCase("Lagarto") && (computadora.equals("Spock") || computadora.equals("Papel"))) ||
+       (eleccionUsuario.equalsIgnoreCase("Spock") && (computadora.equals("Tijera") || computadora.equals("Piedra")))){
+        return "Ganaste";
+    }
+
+    return "Perdiste";
     }
 
     public String pptls2(String game[]) {
