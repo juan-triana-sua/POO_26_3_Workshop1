@@ -393,10 +393,10 @@ public class Workshop {
     }
 
     return punto > arroba+1 && punto < correo.length()-1;
-    }
+    }//
+
 
     // Método que calcula el promedio de una lista de números
-
     public double promedioLista(List<Integer> lista) {
         // TODO: Implementar el método para calcular el promedio de una lista de números.
         // Ejemplo: Si lista = [1, 2, 3, 4, 5], el resultado debería ser 3.0.
@@ -512,7 +512,7 @@ public class Workshop {
     }
 
     return "Perdiste";
-    }
+    }//	El test copila varias veces el código y como usa Math.random(), cada copilación puede dar un resultado diferente. Se debe guardar el resultado y probar una sola vez.
 
     public String pptls2(String game[]) {
         //Retornar player ganador o empate
