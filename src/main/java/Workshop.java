@@ -552,7 +552,7 @@ Rock crushes Scissors
     public double areaCirculo(double radio) {
 
 	return Math.PI * radio * radio;
-    }
+    }//el test espera 31.41 para radio 10, pero el resultado correcto es 314.15. El test debería usar Math.PI * 10 * 10.
 
     public String zoodiac(int day, int month) {
  
