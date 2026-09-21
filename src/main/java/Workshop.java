@@ -414,7 +414,6 @@ public class Workshop {
 
     return (double)suma / lista.size();
 }
-    }
 
     // Método que convierte un número en su representación binaria
     public String convertirABinario(int numero) {
