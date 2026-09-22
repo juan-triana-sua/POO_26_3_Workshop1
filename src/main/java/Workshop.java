@@ -371,6 +371,15 @@ public class Workshop {
         return false;
     }
 
+    for(int a=0; a<correo.length(); a++){
+        char caracter = correo.charAt(a);
+
+        if(!Character.isLetterOrDigit(caracter) && caracter!='@' && caracter!='.' && caracter!='_' && caracter!='-' && caracter!='+'){
+            return false;
+        }
+    } //existian caracteres que no se deben permitir poner pero no se aclara en el Workshop.java, solo estan en el test y dice que no debe dar true, por ende no permiti que se puedan poner esos simbolos especiales.
+
+
     int arroba = -1;
     int punto = -1;
 
